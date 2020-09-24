@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcMeasure";
+import "google/protobuf/empty.proto";
+
+package measure;
+
+service Measure {
+  rpc SendMeasure (stream MeasureRequest) returns (google.protobuf.Empty);  
+}
+
+service Auth {
+	rpc GetToken (TokenRequest) returns (TokenReply); 
+}
+
+message MeasureRequest {
+  string name = 1;
+  int32 value = 2;
+}
+
+message TokenRequest {
+	string name =1; 
+}
+
+message TokenReply {
+	string token =1; 
+}

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcMeasure", "GrpcMeasure\GrpcMeasure.csproj", "{666CDF48-370F-4A8B-8C3F-C483E3989F97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{56F1DFAA-957F-44A0-8E16-30328D685E7D}"
+	ProjectSection(SolutionItems) = preProject
+		Protos\measure.proto = Protos\measure.proto
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasureClient", "MeasureClient\MeasureClient.csproj", "{4EBFA380-F938-444A-ACE4-F27F4E1ACDE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{666CDF48-370F-4A8B-8C3F-C483E3989F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666CDF48-370F-4A8B-8C3F-C483E3989F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666CDF48-370F-4A8B-8C3F-C483E3989F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666CDF48-370F-4A8B-8C3F-C483E3989F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBFA380-F938-444A-ACE4-F27F4E1ACDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBFA380-F938-444A-ACE4-F27F4E1ACDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBFA380-F938-444A-ACE4-F27F4E1ACDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBFA380-F938-444A-ACE4-F27F4E1ACDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2292EDB3-EB0F-4C97-87C5-0B54A7E72359}
+	EndGlobalSection
+EndGlobal
